@@ -22,4 +22,10 @@ int main()
     scanf("lf",&totalUsed);
     printf("current day from 30 days, 1 for first and 30 for last day: \n");
     scanf("lf",current_day);
+
+    // calculate the remaining days, remaining GBS ,average daily used, and maximum used.
+    remaining_day=30-current_day;
+    remainingGB=totalUsed-totalGB;
+    AvgDailyUsed=totalUsed/current_day;
+    maxUsed=totalGB/30;
 }
