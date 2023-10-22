@@ -47,7 +47,11 @@ int main()
         printf("you can use up to %0.3lf GB/day and stay below your data plan limit\n",extraUse);
 
     }
-    
+    else
+    {
+        printf("you have already met your limit, you are getting some overage charges\n");
+    }
+    return 0;
 
 
 
