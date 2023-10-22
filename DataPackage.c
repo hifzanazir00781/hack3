@@ -33,6 +33,7 @@ int main()
     printf("%d days used, %d days remaining\n",current_day,remaining_day);
     printf("Average daily use = %0.3lf GB/day\n",AvgDailyUsed);
 
+    //if condition for max used and suggestion.
     if(AvgDailyUsed>maxUsed)
     {
         printf("you are exceeding your average daily use (%0.3lf GB/day)\n",maxUsed);
@@ -40,6 +41,8 @@ int main()
         printf("continuing this high usage, you will exceed your data plan by %0.1lf GB\n",suggestion);
 
     }
+
+    //condition: for max used and extra used
     else if (AvgDailyUsed>maxUsed)
     {
         printf("you are at or below your average daily use\n",maxUsed);
@@ -47,12 +50,11 @@ int main()
         printf("you can use up to %0.3lf GB/day and stay below your data plan limit\n",extraUse);
 
     }
+
+    // else condition if you getting overage charges
     else
     {
         printf("you have already met your limit, you are getting some overage charges\n");
     }
     return 0;
-
-
-
 }
