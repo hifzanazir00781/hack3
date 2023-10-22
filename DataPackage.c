@@ -32,7 +32,17 @@ int main()
     // print current day , remaining days and average daily used.
     printf("%d days used, %d days remaining\n",current_day,remaining_day);
     printf("Average daily use = %0.3lf GB/day\n",AvgDailyUsed);
+
+    if(AvgDailyUsed>maxUsed)
+    {
+        printf("you are exceeding your average daily use (%0.3lf GB/day)\n",maxUsed);
+        double suggestion=(AvgDailyUsed-maxUsed) * 30;
+        printf("continuing this high usage, you will exceed your data plan by %0.1lf GB\n",suggestion);
+
+    }
     
+
+
 
 
 }
