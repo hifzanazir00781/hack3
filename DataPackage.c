@@ -43,7 +43,7 @@ int main()
     }
 
     //condition: for max used and extra used
-    else if (AvgDailyUsed>maxUsed)
+    else if (AvgDailyUsed<maxUsed)
     {
         printf("you are at or below your average daily use\n",maxUsed);
         double extraUse = (totalGB-totalUsed)/remaining_day;
